@@ -53,6 +53,7 @@ const formatDate = (date) =>
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "Asia/Tokyo",
   }).format(new Date(`${date}T00:00:00+09:00`));
 
 const navHtml = (fromOutput, active) =>
@@ -460,7 +461,12 @@ for (const page of infoPages) {
 
 await writeOutput("404.html", render404());
 await writeOutput(".nojekyll", "");
-await writeOutput("robots.txt", "User-agent: *\nAllow: /\n");
+await writeOutput(
+  "robots.txt",
+  `User-agent: *
+Allow: /
+${site.siteUrl ? `Sitemap: ${site.siteUrl.replace(/\/$/, "")}/sitemap.xml\n` : ""}`,
+);
 
 const sitemap = renderSitemap();
 if (sitemap) {

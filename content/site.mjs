@@ -5,7 +5,7 @@ export const site = {
     "プロ野球とポケモンを、初心者にも分かりやすく整理する読みものサイト。",
   author: "PLAYBOOK JOURNAL 編集部",
   language: "ja",
-  siteUrl: "",
+  siteUrl: "https://playbook-journal.pages.dev",
   nav: [
     { href: "index.html", label: "ホーム" },
     { href: "baseball/index.html", label: "プロ野球" },
