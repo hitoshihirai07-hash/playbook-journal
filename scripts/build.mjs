@@ -89,9 +89,11 @@ const layout = ({
   description,
   body,
   structuredData,
+  robots = "index,follow",
+  includeCanonical = true,
 }) => {
   const pageTitle = title ? `${title} | ${site.title}` : site.title;
-  const canonical = absoluteUrl(fromOutput);
+  const canonical = includeCanonical ? absoluteUrl(fromOutput) : "";
   return `<!doctype html>
 <html lang="${site.language}">
   <head>
@@ -99,7 +101,7 @@ const layout = ({
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(pageTitle)}</title>
     <meta name="description" content="${escapeHtml(description)}">
-    <meta name="robots" content="index,follow">
+    <meta name="robots" content="${escapeHtml(robots)}">
     ${canonical ? `<link rel="canonical" href="${escapeHtml(canonical)}">` : ""}
     <link rel="icon" href="${assetHref(fromOutput, "favicon.svg")}" type="image/svg+xml">
     <link rel="stylesheet" href="${assetHref(fromOutput, "assets/styles.css")}">
@@ -425,6 +427,8 @@ const render404 = () => {
     title: "ページが見つかりません",
     description: "ページが見つかりません。",
     body,
+    robots: "noindex,follow",
+    includeCanonical: false,
   });
 };
 
@@ -433,16 +437,34 @@ const renderSitemap = () => {
     return "";
   }
 
-  const paths = [
-    "index.html",
-    ...Object.keys(site.categories).map((slug) => `${slug}/index.html`),
-    ...articles.map(outputPathForArticle),
-    ...infoPages.map((page) => `${page.slug}/index.html`),
+  const latestDate = (items) =>
+    items
+      .map((item) => item.updatedDate ?? item.date)
+      .filter(Boolean)
+      .sort()
+      .at(-1);
+  const siteLatestDate = latestDate(articles);
+  const entries = [
+    { outputPath: "index.html", lastmod: siteLatestDate },
+    ...Object.keys(site.categories).map((slug) => ({
+      outputPath: `${slug}/index.html`,
+      lastmod: latestDate(articles.filter((article) => article.category === slug)),
+    })),
+    ...articles.map((article) => ({
+      outputPath: outputPathForArticle(article),
+      lastmod: article.updatedDate ?? article.date,
+    })),
+    ...infoPages.map((page) => ({
+      outputPath: `${page.slug}/index.html`,
+      lastmod: page.updatedDate,
+    })),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${paths.map((outputPath) => `  <url><loc>${escapeHtml(absoluteUrl(outputPath))}</loc></url>`).join("\n")}
+${entries
+  .map(({ outputPath, lastmod }) => `  <url><loc>${escapeHtml(absoluteUrl(outputPath))}</loc>${lastmod ? `<lastmod>${escapeHtml(lastmod)}</lastmod>` : ""}</url>`)
+  .join("\n")}
 </urlset>
 `;
 };
