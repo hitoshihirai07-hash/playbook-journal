@@ -141,12 +141,15 @@ const writeOutput = async (outputPath, content) => {
 
 const cardHtml = (article, fromOutput) => {
   const category = site.categories[article.category];
+  const cardDate = article.updatedDate
+    ? `${formatDate(article.updatedDate)} 更新`
+    : formatDate(article.date);
   return `
     <article class="article-card">
       <div class="card-label">${escapeHtml(category.label)}</div>
       <h3><a href="${directoryHref(fromOutput, outputPathForArticle(article))}">${escapeHtml(article.title)}</a></h3>
       <p>${escapeHtml(article.description)}</p>
-      <div class="article-meta">${escapeHtml(formatDate(article.date))} ・ ${escapeHtml(article.readingTime)}</div>
+      <div class="article-meta">${escapeHtml(cardDate)} ・ ${escapeHtml(article.readingTime)}</div>
     </article>`;
 };
 
@@ -167,7 +170,11 @@ const categoryPanelHtml = (slug, fromOutput) => {
 
 const renderHome = () => {
   const fromOutput = "index.html";
-  const latest = [...articles].slice(0, 6);
+  const latest = [...articles]
+    .sort((left, right) =>
+      (right.updatedDate ?? right.date).localeCompare(left.updatedDate ?? left.date),
+    )
+    .slice(0, 6);
   const body = `
     <section class="hero">
       <div>
@@ -277,13 +284,10 @@ const sectionHtml = (section, fromOutput) => {
 const renderArticle = (article) => {
   const fromOutput = outputPathForArticle(article);
   const category = site.categories[article.category];
-  const sources = article.sources.length
-    ? `
-      <h2>参考資料</h2>
-      <ul class="source-list">
-        ${article.sources.map((source) => `<li><a href="${escapeHtml(source.href)}" rel="noopener noreferrer">${escapeHtml(source.label)}</a></li>`).join("")}
-      </ul>`
-    : "";
+  const modifiedDate = article.updatedDate ?? article.date;
+  const articleDateMeta = article.updatedDate
+    ? `${formatDate(article.date)} 公開 ・ ${formatDate(article.updatedDate)} 更新 ・ ${article.readingTime}`
+    : `${formatDate(article.date)} ・ ${article.readingTime}`;
   const tags = article.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
   const related = articles
     .filter((candidate) => candidate.category === article.category && candidate.slug !== article.slug)
@@ -310,7 +314,7 @@ const renderArticle = (article) => {
       <header class="article-header">
         <div class="eyebrow">${escapeHtml(category.label)}</div>
         <h1>${escapeHtml(article.title)}</h1>
-        <div class="article-meta">${escapeHtml(formatDate(article.date))} ・ ${escapeHtml(article.readingTime)}</div>
+        <div class="article-meta">${escapeHtml(articleDateMeta)}</div>
         <p class="article-lead">${escapeHtml(article.lead)}</p>
         <div class="tags">${tags}</div>
       </header>
@@ -318,9 +322,8 @@ const renderArticle = (article) => {
         ${article.sections.map((section) => sectionHtml(section, fromOutput)).join("")}
       </div>
       <footer class="article-footer">
-        ${sources}
         <h2>記事について</h2>
-        <p>内容は公開時点で確認した情報をもとにしています。最新のルールや日程は、必ず公式サイトで確認してください。</p>
+        <p>内容は公開時点で確認した情報をもとにしています。最新のルールや日程は、権利者や運営者が案内する公式情報で確認してください。</p>
       </footer>
     </article>
     ${relatedHtml}`;
@@ -337,7 +340,7 @@ const renderArticle = (article) => {
       headline: article.title,
       description: article.description,
       datePublished: article.date,
-      dateModified: article.date,
+      dateModified: modifiedDate,
       author: { "@type": "Organization", name: site.author },
       publisher: { "@type": "Organization", name: site.title },
       ...(absoluteUrl(fromOutput) ? { mainEntityOfPage: absoluteUrl(fromOutput) } : {}),

@@ -35,16 +35,7 @@ export const articles = [
           "最初は細かな基準値を暗記せず、同じチームや同じ守備位置の選手を比べてみましょう。",
       },
     ],
-    sources: [
-      {
-        label: "NPB.jp 野球の記録について",
-        href: "https://npb.jp/scoring/",
-      },
-      {
-        label: "NPB.jp シーズン成績",
-        href: "https://npb.jp/bis/2026/stats/",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "whip-guide",
@@ -80,12 +71,7 @@ export const articles = [
         ],
       },
     ],
-    sources: [
-      {
-        label: "NPB.jp シーズン成績",
-        href: "https://npb.jp/bis/2026/stats/",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "interleague-guide",
@@ -122,12 +108,7 @@ export const articles = [
           "このサイトでは、変更される可能性がある日程を転載せず、観戦のヒントを中心に紹介します。",
       },
     ],
-    sources: [
-      {
-        label: "NPB.jp セ・パ交流戦",
-        href: "https://npb.jp/interleague/",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "stadium-first-visit",
@@ -163,12 +144,7 @@ export const articles = [
         ],
       },
     ],
-    sources: [
-      {
-        label: "NPB.jp 写真・動画等の撮影及び配信・送信規程",
-        href: "https://npb.jp/npb/satsuei_haisin_kitei_20250901.pdf",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "rookie-watch",
@@ -205,61 +181,53 @@ export const articles = [
         ],
       },
     ],
-    sources: [
-      {
-        label: "NPB.jp 選手一覧",
-        href: "https://npb.jp/bis/teams/",
-      },
-      {
-        label: "NPB.jp シーズン成績",
-        href: "https://npb.jp/bis/2026/stats/",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "type-matchups",
     category: "pokemon",
     title: "タイプ相性の覚え方：最初から全部暗記しない",
     description:
-      "ポケモンのタイプ相性を、初心者が無理なく覚えるための順序と振り返り方を紹介します。",
+      "相性表を丸暗記せず、よく見るポケモンから弱点を覚えて自然に理解を広げる方法を紹介します。",
     date: "2026-06-01",
+    updatedDate: "2026-06-02",
     readingTime: "5分",
     tags: ["ゲーム入門", "タイプ相性"],
     lead:
-      "タイプ相性はバトルの基本ですが、最初から表を丸ごと覚える必要はありません。よく使う組み合わせから少しずつ増やしましょう。",
+      "タイプ相性はバトルの基本ですが、最初から表を丸ごと暗記する必要はありません。よく使うポケモン、よく見かけるポケモンごとに弱点を覚えると、相性の仕組みが自然に身につきます。",
     sections: [
       {
-        heading: "まずは身近な組み合わせから",
+        heading: "相性表より先に、ポケモンごとに覚える",
         paragraphs: [
-          "シリーズでは18の基本タイプが登場します。最初は、ほのお、みず、くさなど、直感的に分かりやすい関係から始めると覚えやすくなります。",
-          "次に、自分がよく使うポケモンの弱点と、よく対戦する相手への有効なタイプを確認します。必要になった順に覚えるほうが実戦で定着します。",
+          "相性表は確認用として便利ですが、最初からすべてを覚えようとすると大変です。まずは、自分が使うポケモンや対戦でよく見かけるポケモンの弱点を一つずつ覚えましょう。",
+          "複数のタイプを持つポケモンでは、二つのタイプに共通する弱点が特に重要です。実際のポケモンと結びつけると、単なる暗記ではなく、対戦中に使える知識になります。",
         ],
       },
       {
-        heading: "一度に覚えるのは三つまで",
+        heading: "ガブリアスとギャラドスで考える",
+        paragraphs: [
+          "通常のタイプを前提にすると、ガブリアスはドラゴン・じめんタイプです。こおりタイプの技は両方の弱点を突くため4倍の効果になります。ドラゴンタイプとフェアリータイプの技も効果抜群です。",
+          "ギャラドスはみず・ひこうタイプです。でんきタイプの技は両方の弱点を突くため4倍の効果になります。",
+          "このように、ポケモンの名前と弱点をセットで覚えていくと、別のポケモンを見るときにもタイプ相性を考えやすくなります。",
+        ],
+      },
+      {
+        heading: "一度に覚えるのは少しずつ",
         list: [
-          "対戦前に、自分のチームで苦手なタイプを一つ確認する。",
-          "対戦後に、迷った相性を一つだけ調べる。",
-          "次の対戦では、前回調べた相性を一度意識して使う。",
+          "自分が使うポケモンの大きな弱点を一つ確認する。",
+          "対戦でよく見かけたポケモンの弱点を一つ確認する。",
+          "迷った相性だけを対戦後に見直す。",
+          "慣れてきたら相性表を見て、知識の抜けを少しずつ埋める。",
         ],
       },
       {
-        heading: "作品ごとの仕組みにも注意する",
+        heading: "タイプが変わる仕組みに注意する",
         paragraphs: [
-          "作品によっては、通常のタイプ相性に加えて独自の仕組みがあります。遊んでいるタイトルの公式情報を確認し、基本タイプと追加要素を分けて考えましょう。",
+          "作品や対戦ルールによっては、テラスタルやメガシンカなどでタイプが変わる場合があります。また、特性などによって技の効果が変わる場合もあります。まず通常のタイプを覚え、追加の仕組みは別に考えると整理しやすくなります。",
         ],
       },
     ],
-    sources: [
-      {
-        label: "ポケットモンスター X・Y 公式サイト タイプ相性表",
-        href: "https://www.pokemon.co.jp/ex/xy/battle/01.html",
-      },
-      {
-        label: "ポケットモンスター スカーレット・バイオレット 公式サイト",
-        href: "https://www.pokemon.co.jp/ex/sv/ja/features/220803_07/",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "beginner-glossary",
@@ -296,12 +264,7 @@ export const articles = [
         ],
       },
     ],
-    sources: [
-      {
-        label: "Pokémon HOME 公式サイト 機能紹介",
-        href: "https://www.pokemon.co.jp/ex/pokemonhome/ja/features/",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "card-storage",
@@ -375,12 +338,7 @@ export const articles = [
         ],
       },
     ],
-    sources: [
-      {
-        label: "Pokémon HOME 公式サイト 機能紹介",
-        href: "https://www.pokemon.co.jp/ex/pokemonhome/ja/features/",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "battle-review",
