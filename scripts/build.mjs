@@ -192,8 +192,8 @@ const renderHome = () => {
         <div class="hero-dot one"></div>
         <div class="hero-dot two"></div>
         <div class="hero-panel">
-          <strong>12</strong>
-          <span>STARTER ARTICLES<br>公開時から読める入門記事</span>
+          <strong>${articles.length}</strong>
+          <span>PUBLISHED ARTICLES<br>公開中の読みもの</span>
         </div>
       </div>
     </section>
