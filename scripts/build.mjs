@@ -48,6 +48,8 @@ const absoluteUrl = (outputPath) => {
   return `${site.siteUrl.replace(/\/$/, "")}/${outputPath.replace(/index\.html$/, "")}`;
 };
 
+const feedUrl = () => (site.siteUrl ? `${site.siteUrl.replace(/\/$/, "")}/feed.xml` : "");
+
 const formatDate = (date) =>
   new Intl.DateTimeFormat("ja-JP", {
     year: "numeric",
@@ -91,6 +93,7 @@ const layout = ({
   structuredData,
   robots = "index,follow",
   includeCanonical = true,
+  pageType = "website",
 }) => {
   const pageTitle = title ? `${title} | ${site.title}` : site.title;
   const canonical = includeCanonical ? absoluteUrl(fromOutput) : "";
@@ -104,6 +107,16 @@ const layout = ({
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="${escapeHtml(robots)}">
     ${canonical ? `<link rel="canonical" href="${escapeHtml(canonical)}">` : ""}
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="${escapeHtml(pageType)}">
+    <meta property="og:site_name" content="${escapeHtml(site.title)}">
+    <meta property="og:title" content="${escapeHtml(pageTitle)}">
+    <meta property="og:description" content="${escapeHtml(description)}">
+    ${canonical ? `<meta property="og:url" content="${escapeHtml(canonical)}">` : ""}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="${escapeHtml(pageTitle)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    ${feedUrl() ? `<link rel="alternate" type="application/atom+xml" title="${escapeHtml(site.title)}" href="${escapeHtml(feedUrl())}">` : ""}
     <link rel="icon" href="${assetHref(fromOutput, "favicon.svg")}" type="image/svg+xml">
     <link rel="stylesheet" href="${assetHref(fromOutput, "assets/styles.css")}">
     <script defer src="${assetHref(fromOutput, "assets/site.js")}"></script>
@@ -337,6 +350,7 @@ const renderArticle = (article) => {
     title: article.title,
     description: article.description,
     body,
+    pageType: "article",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -470,6 +484,42 @@ ${entries
 `;
 };
 
+const renderFeed = () => {
+  if (!site.siteUrl) {
+    return "";
+  }
+
+  const sortedArticles = [...articles].sort((left, right) =>
+    (right.updatedDate ?? right.date).localeCompare(left.updatedDate ?? left.date),
+  );
+  const latestDate = sortedArticles[0]?.updatedDate ?? sortedArticles[0]?.date;
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>${escapeHtml(site.title)}</title>
+  <subtitle>${escapeHtml(site.description)}</subtitle>
+  <link href="${escapeHtml(feedUrl())}" rel="self"/>
+  <link href="${escapeHtml(site.siteUrl.replace(/\/$/, ""))}/"/>
+  <id>${escapeHtml(site.siteUrl.replace(/\/$/, ""))}/</id>
+  ${latestDate ? `<updated>${escapeHtml(latestDate)}T00:00:00+09:00</updated>` : ""}
+${sortedArticles
+  .map((article) => {
+    const articleUrl = absoluteUrl(outputPathForArticle(article));
+    const modifiedDate = article.updatedDate ?? article.date;
+    return `  <entry>
+    <title>${escapeHtml(article.title)}</title>
+    <link href="${escapeHtml(articleUrl)}"/>
+    <id>${escapeHtml(articleUrl)}</id>
+    <published>${escapeHtml(article.date)}T00:00:00+09:00</published>
+    <updated>${escapeHtml(modifiedDate)}T00:00:00+09:00</updated>
+    <summary>${escapeHtml(article.description)}</summary>
+  </entry>`;
+  })
+  .join("\n")}
+</feed>
+`;
+};
+
 await rm(docsDir, { recursive: true, force: true });
 await mkdir(docsDir, { recursive: true });
 await cp(staticDir, docsDir, { recursive: true });
@@ -497,6 +547,11 @@ ${site.siteUrl ? `Sitemap: ${site.siteUrl.replace(/\/$/, "")}/sitemap.xml\n` : "
 const sitemap = renderSitemap();
 if (sitemap) {
   await writeOutput("sitemap.xml", sitemap);
+}
+
+const feed = renderFeed();
+if (feed) {
+  await writeOutput("feed.xml", feed);
 }
 
 console.log(`Built ${articles.length} articles and ${infoPages.length + 5} pages in ${docsDir}`);
