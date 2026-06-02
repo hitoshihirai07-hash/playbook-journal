@@ -99,6 +99,7 @@ const layout = ({
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="18bkD956Gj3a_2GBjRWH7bKFoSrDXwbM0oE8xLWH1KE">
     <title>${escapeHtml(pageTitle)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="${escapeHtml(robots)}">
