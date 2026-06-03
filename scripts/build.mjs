@@ -184,6 +184,22 @@ const categoryPanelHtml = (slug, fromOutput) => {
     </article>`;
 };
 
+const relatedSitesHtml = () => `
+  <div class="site-card-grid">
+    <article class="site-card">
+      <div class="card-label">BASEBALL SITE</div>
+      <h3>Player Lens</h3>
+      <p>プロ野球の選手情報やデータを確認できる、管理人運営の関連サイトです。</p>
+      <a href="https://player-lens-pages.pages.dev/" rel="noopener noreferrer">サイトを見る →</a>
+    </article>
+    <article class="site-card">
+      <div class="card-label">POKEMON SITE</div>
+      <h3>Poke Edge</h3>
+      <p>ポケモン関連の情報を別角度から整理する、管理人運営の関連サイトです。</p>
+      <a href="https://poke-edge.pages.dev/" rel="noopener noreferrer">サイトを見る →</a>
+    </article>
+  </div>`;
+
 const renderHome = () => {
   const fromOutput = "index.html";
   const latest = [...articles]
@@ -226,10 +242,20 @@ const renderHome = () => {
         ${categoryPanelHtml("features", fromOutput)}
       </div>
     </section>
-    <section class="section">
-      <div class="section-heading">
-        <div>
-          <div class="eyebrow">LATEST ARTICLES</div>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">RELATED SITES</div>
+            <h2>関連サイト</h2>
+          </div>
+          <a href="${directoryHref(fromOutput, "articles/features/managed-sites/index.html")}">紹介ページを見る →</a>
+        </div>
+        ${relatedSitesHtml()}
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">LATEST ARTICLES</div>
           <h2>新着記事</h2>
         </div>
       </div>
