@@ -551,10 +551,65 @@ export const articles = [
     ],
     sources: [],
   },
-  {
-    slug: "baseball-starter",
-    category: "features",
-      title: "プロ野球を気軽に楽しむための入門記事",
+    {
+      slug: "managed-sites",
+      category: "features",
+      title: "関連サイト紹介：プロ野球とポケモンをより詳しく見る",
+      description:
+        "PLAYBOOK JOURNALとあわせて使える、管理人運営のプロ野球サイトとポケモンサイトを紹介します。",
+      date: "2026-06-03",
+      readingTime: "3分",
+      tags: ["関連サイト", "まとめ"],
+      lead:
+        "PLAYBOOK JOURNALでは入門記事を中心に整理しています。より詳しいデータや別テーマの情報を見たいときは、管理人が運営している関連サイトも活用してください。",
+      sections: [
+        {
+          heading: "プロ野球の関連サイト",
+          paragraphs: [
+            "プロ野球の選手情報やデータを確認したい人向けの関連サイトです。PLAYBOOK JOURNALの入門記事で数字の見方をつかんだあと、より具体的な選手情報を見る入口として使えます。",
+          ],
+          externalLinks: [
+            {
+              label: "Player Lens",
+              href: "https://player-lens-pages.pages.dev/",
+            },
+          ],
+        },
+        {
+          heading: "ポケモンの関連サイト",
+          paragraphs: [
+            "ポケモン関連の情報を別角度から整理するサイトです。タイプ相性や整理術の記事とあわせて、ポケモンを楽しむための補助ページとして紹介します。",
+          ],
+          externalLinks: [
+            {
+              label: "Poke Edge",
+              href: "https://poke-edge.pages.dev/",
+            },
+          ],
+        },
+        {
+          heading: "このページについて",
+          paragraphs: [
+            "ここで紹介しているリンク先は、管理人が運営している関連サイトです。公式サイトではありません。各サイトの内容は今後の更新に合わせて変わる場合があります。",
+          ],
+          links: [
+            {
+              label: "プロ野球を気軽に楽しむための入門記事",
+              article: "baseball-starter",
+            },
+            {
+              label: "ポケモンを気軽に楽しむための入門記事",
+              article: "pokemon-starter",
+            },
+          ],
+        },
+      ],
+      sources: [],
+    },
+    {
+      slug: "baseball-starter",
+      category: "features",
+        title: "プロ野球を気軽に楽しむための入門記事",
       description:
         "初めてプロ野球を見る人に向けて、観戦と数字の両方を楽しめる記事を読む順番でまとめます。",
       date: "2026-06-01",
@@ -595,15 +650,19 @@ export const articles = [
               { label: "WHIPとは？", article: "whip-guide" },
             ],
       },
-      {
-        heading: "成長を長く楽しむ",
-        links: [
-          {
-            label: "新人選手を見るときの5つのポイント",
-            article: "rookie-watch",
-          },
-        ],
-      },
+        {
+          heading: "成長を長く楽しむ",
+          links: [
+            {
+              label: "新人選手を見るときの5つのポイント",
+              article: "rookie-watch",
+            },
+            {
+              label: "関連サイト紹介：プロ野球とポケモンをより詳しく見る",
+              article: "managed-sites",
+            },
+          ],
+        },
     ],
     sources: [],
   },
@@ -654,13 +713,19 @@ export const articles = [
           },
         ],
       },
-      {
-        heading: "自分のペースで読む",
-        paragraphs: [
-          "ゲーム、カード、コレクションなど、楽しみ方は人によって異なります。このサイトでは、必要なときに読める短いガイドを追加していきます。",
-        ],
-      },
-    ],
+        {
+          heading: "自分のペースで読む",
+          paragraphs: [
+            "ゲーム、カード、コレクションなど、楽しみ方は人によって異なります。このサイトでは、必要なときに読める短いガイドを追加していきます。",
+          ],
+          links: [
+            {
+              label: "関連サイト紹介：プロ野球とポケモンをより詳しく見る",
+              article: "managed-sites",
+            },
+          ],
+        },
+      ],
     sources: [],
   },
 ];

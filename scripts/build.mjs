@@ -293,8 +293,16 @@ const sectionHtml = (section, fromOutput) => {
         })
         .join("")}</ul>`
     : "";
+  const externalLinks = section.externalLinks
+    ? `<ul class="article-links">${section.externalLinks
+        .map(
+          (link) =>
+            `<li><a href="${escapeHtml(link.href)}" rel="noopener noreferrer">${escapeHtml(link.label)} →</a></li>`,
+        )
+        .join("")}</ul>`
+    : "";
   const note = section.note ? `<aside class="note">${escapeHtml(section.note)}</aside>` : "";
-  return `<section><h2>${escapeHtml(section.heading)}</h2>${paragraphs}${list}${links}${note}</section>`;
+  return `<section><h2>${escapeHtml(section.heading)}</h2>${paragraphs}${list}${links}${externalLinks}${note}</section>`;
 };
 
 const renderArticle = (article) => {
