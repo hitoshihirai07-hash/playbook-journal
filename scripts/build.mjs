@@ -78,6 +78,7 @@ const footerHtml = (fromOutput) => `
       </div>
       <div class="footer-links">
         <a href="${directoryHref(fromOutput, "about/index.html")}">このサイトについて</a>
+        <a href="${directoryHref(fromOutput, "updates/index.html")}">更新履歴</a>
         <a href="${directoryHref(fromOutput, "disclaimer/index.html")}">免責事項</a>
         <a href="${directoryHref(fromOutput, "privacy/index.html")}">プライバシー</a>
       </div>
@@ -200,6 +201,45 @@ const relatedSitesHtml = () => `
     </article>
   </div>`;
 
+const recommendedRoutesHtml = (fromOutput) => {
+  const routes = [
+    {
+      label: "BASEBALL GUIDE",
+      slug: "pitching-stats-starter",
+      title: "プロ野球 投手成績入門まとめ",
+      description:
+        "防御率、WHIP、自責点、奪三振率を読む順番で整理します。投手成績の記事をまとめて読みたい人向けです。",
+    },
+    {
+      label: "POKEMON GUIDE",
+      slug: "pokemon-move-starter",
+      title: "ポケモン 技選び入門まとめ",
+      description:
+        "タイプ相性、タイプ一致、物理技と特殊技を分けて確認します。技選びで迷いやすい人向けです。",
+    },
+  ];
+
+  return `
+    <div class="site-card-grid">
+      ${routes
+        .map((route) => {
+          const article = articleBySlug.get(route.slug);
+          if (!article) {
+            throw new Error(`Unknown recommended route: ${route.slug}`);
+          }
+
+          return `
+            <article class="site-card">
+              <div class="card-label">${escapeHtml(route.label)}</div>
+              <h3>${escapeHtml(route.title)}</h3>
+              <p>${escapeHtml(route.description)}</p>
+              <a href="${directoryHref(fromOutput, outputPathForArticle(article))}">まとめを読む →</a>
+            </article>`;
+        })
+        .join("")}
+    </div>`;
+};
+
 const renderHome = () => {
   const fromOutput = "index.html";
   const latest = [...articles]
@@ -242,6 +282,15 @@ const renderHome = () => {
         ${categoryPanelHtml("features", fromOutput)}
       </div>
     </section>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">NEXT READ</div>
+            <h2>次に読むおすすめ導線</h2>
+          </div>
+        </div>
+        ${recommendedRoutesHtml(fromOutput)}
+      </section>
       <section class="section">
         <div class="section-heading">
           <div>
@@ -418,6 +467,30 @@ const renderInfoPage = ({ slug, title, description, content }) => {
   });
 };
 
+const renderUpdates = () => {
+  const fromOutput = "updates/index.html";
+  const sortedArticles = [...articles].sort((left, right) =>
+    (right.updatedDate ?? right.date).localeCompare(left.updatedDate ?? left.date),
+  );
+  const body = `
+    <section class="page-hero">
+      <div class="eyebrow">UPDATES</div>
+      <h1>更新履歴</h1>
+      <p>PLAYBOOK JOURNALで公開・更新した記事を新しい順にまとめます。継続して記事を追加していることが分かる、サイト内の案内ページです。</p>
+    </section>
+    <section class="section">
+      ${cardsHtml(sortedArticles, fromOutput)}
+    </section>`;
+
+  return layout({
+    fromOutput,
+    active: "",
+    title: "更新履歴",
+    description: "PLAYBOOK JOURNALで公開・更新した記事を新しい順にまとめます。",
+    body,
+  });
+};
+
 const infoPages = [
   {
     slug: "about",
@@ -500,6 +573,7 @@ const renderSitemap = () => {
   const siteLatestDate = latestDate(articles);
   const entries = [
     { outputPath: "index.html", lastmod: siteLatestDate },
+    { outputPath: "updates/index.html", lastmod: siteLatestDate },
     ...Object.keys(site.categories).map((slug) => ({
       outputPath: `${slug}/index.html`,
       lastmod: latestDate(articles.filter((article) => article.category === slug)),
@@ -570,6 +644,7 @@ for (const slug of Object.keys(site.categories)) {
 for (const article of articles) {
   await writeOutput(outputPathForArticle(article), renderArticle(article));
 }
+await writeOutput("updates/index.html", renderUpdates());
 for (const page of infoPages) {
   await writeOutput(`${page.slug}/index.html`, renderInfoPage(page));
 }
@@ -593,4 +668,4 @@ if (feed) {
   await writeOutput("feed.xml", feed);
 }
 
-console.log(`Built ${articles.length} articles and ${infoPages.length + 5} pages in ${docsDir}`);
+console.log(`Built ${articles.length} articles and ${infoPages.length + 6} pages in ${docsDir}`);
