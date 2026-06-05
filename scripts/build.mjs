@@ -78,6 +78,7 @@ const footerHtml = (fromOutput) => `
       </div>
       <div class="footer-links">
         <a href="${directoryHref(fromOutput, "about/index.html")}">このサイトについて</a>
+        <a href="${directoryHref(fromOutput, "articles/features/admin-profile/index.html")}">管理者プロフィール</a>
         <a href="${directoryHref(fromOutput, "updates/index.html")}">更新履歴</a>
         <a href="${directoryHref(fromOutput, "disclaimer/index.html")}">免責事項</a>
         <a href="${directoryHref(fromOutput, "privacy/index.html")}">プライバシー</a>
