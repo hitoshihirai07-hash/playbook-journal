@@ -79,6 +79,7 @@ const footerHtml = (fromOutput) => `
       <div class="footer-links">
         <a href="${directoryHref(fromOutput, "about/index.html")}">このサイトについて</a>
         <a href="${directoryHref(fromOutput, "articles/features/admin-profile/index.html")}">管理者プロフィール</a>
+        <a href="${directoryHref(fromOutput, "monetization/index.html")}">広告・有料コンテンツ</a>
         <a href="${directoryHref(fromOutput, "updates/index.html")}">更新履歴</a>
         <a href="${directoryHref(fromOutput, "disclaimer/index.html")}">免責事項</a>
         <a href="${directoryHref(fromOutput, "privacy/index.html")}">プライバシー</a>
@@ -534,6 +535,24 @@ const infoPages = [
       <h2>変更について</h2>
       <p>運営内容の変更に応じて、本ポリシーを更新する場合があります。</p>
       <p>最終更新日：2026年6月3日</p>`,
+  },
+  {
+    slug: "monetization",
+    title: "広告・有料コンテンツについて",
+    description: "PLAYBOOK JOURNALの広告掲載と有料コンテンツに関する現在の方針をご案内します。",
+    updatedDate: "2026-06-06",
+    content: `
+      <h2>現在の広告掲載について</h2>
+      <p>現在、本サイトでは広告配信サービスを設置していません。Google AdSenseなどの広告コードも掲載していません。</p>
+      <p>広告を導入する場合は、記事数、サイト内の導線、Search Consoleでの表示状況、各種ポリシーへの対応を確認したうえで判断します。</p>
+      <h2>広告審査を検討する目安</h2>
+      <p>当面は、35〜40本程度の記事、主要ページのインデックス確認、サイトマップの取得状況、直近28日のSearch Console表示回数などを見て判断します。</p>
+      <p>審査のためだけに急いで広告コードを入れるのではなく、読者が迷わず記事を読める状態を優先します。</p>
+      <h2>有料コンテンツについて</h2>
+      <p>現在、本サイトではサブスクや有料記事を提供していません。無料で読める入門記事と整理記事を増やす段階です。</p>
+      <p>将来、有料コンテンツを導入する場合は、無料記事との差分、提供内容、支払い方法、解約方法、検索エンジン向けの表示方針などを事前に整理します。</p>
+      <h2>プライバシーポリシーの更新について</h2>
+      <p>広告配信、アクセス解析、問い合わせフォーム、有料コンテンツなどを導入する場合は、利用するサービスと取得される情報をプライバシーポリシーへ追記します。</p>`,
   },
 ];
 
