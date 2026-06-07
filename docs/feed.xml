@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>PLAYBOOK JOURNAL</title>
+  <subtitle>プロ野球とポケモンを、初心者にも分かりやすく整理する読みものサイト。</subtitle>
+  <link href="https://playbook-journal.pages.dev/feed.xml" rel="self"/>
+  <link href="https://playbook-journal.pages.dev/"/>
+  <id>https://playbook-journal.pages.dev/</id>
+  <updated>2026-06-07T00:00:00+09:00</updated>
+  <entry>
+    <title>NPB12球団の歴史入門：リーグ・本拠地・球団の見方</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/npb-12-team-history-intro/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/npb-12-team-history-intro/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>NPB12球団を、セ・リーグとパ・リーグ、本拠地、球団の歴史を見る入口として初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>ポケモン本編ゲームの歴史入門：赤・緑からSwitch時代まで</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/pokemon-mainline-game-history/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/pokemon-mainline-game-history/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>ポケモン本編ゲームの流れを、赤・緑から金・銀、DS時代、Switch時代まで初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>阪神タイガースの歴史入門：甲子園・ライバル関係・応援文化を知る</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/hanshin-tigers-history/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/hanshin-tigers-history/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>阪神タイガースを、阪神甲子園球場、巨人とのライバル関係、応援文化、初めて見るときの注目ポイントから初心者向けに紹介します。</summary>
+  </entry>
+  <entry>
+    <title>ポケットモンスター ルビー・サファイアの歴史入門：ホウエン地方とGBA時代を知る</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/pokemon-ruby-sapphire-history/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/pokemon-ruby-sapphire-history/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>2002年に発売された『ポケットモンスター ルビー・サファイア』を、ホウエン地方、ゲームボーイアドバンス時代、後の作品へのつながりから紹介します。</summary>
+  </entry>
+  <entry>
+    <title>歴史から楽しむプロ野球とポケモン：新しい入口まとめ</title>
+    <link href="https://playbook-journal.pages.dev/articles/features/history-series-starter/"/>
+    <id>https://playbook-journal.pages.dev/articles/features/history-series-starter/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>プロ野球の球団史とポケモン本編ゲームの歴史を、初心者向けに読む順番でまとめる入口ページです。</summary>
+  </entry>
+  <entry>
+    <title>はじめて球場観戦で迷わない持ち物リスト</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/stadium-beginner-packing/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/stadium-beginner-packing/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>初めてプロ野球を球場で見る人に向けて、チケット確認、服装、持ち物、あると便利なものを整理します。</summary>
+  </entry>
+  <entry>
+    <title>ポケモン初心者がタイプ相性を覚える順番</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/type-matchup-learning-order/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/type-matchup-learning-order/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>ポケモンのタイプ相性を最初から全部暗記せず、よく使うポケモンから少しずつ覚える順番を紹介します。</summary>
+  </entry>
+  <entry>
+    <title>プロ野球の順位表の見方：勝率・ゲーム差・貯金をやさしく読む</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/standings-winning-percentage-games-back/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/standings-winning-percentage-games-back/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>プロ野球の順位表でよく見る勝率、ゲーム差、貯金と借金の意味を、初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>野球の守備位置と役割：最初に覚えたい9つの場所</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/fielding-positions-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/fielding-positions-guide/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>野球の守備位置を、投手、捕手、内野手、外野手の役割から初心者向けに分かりやすく整理します。</summary>
+  </entry>
+  <entry>
+    <title>プロ野球チケットの席種入門：内野・外野・ビジター席の選び方</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/baseball-seat-types-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/baseball-seat-types-guide/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>初めてプロ野球のチケットを選ぶ人に向けて、内野席、外野席、ビジター席の違いと選び方を整理します。</summary>
+  </entry>
+  <entry>
+    <title>性格補正とは？ ポケモン育成で最初に見るポイント</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/nature-stat-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/nature-stat-guide/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>ポケモンの性格補正が能力にどう関わるのか、初心者が最初に見るポイントを整理します。</summary>
+  </entry>
+  <entry>
+    <title>努力値とは？ 最初はざっくり理解する育成入門</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/effort-values-beginner-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/effort-values-beginner-guide/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>ポケモン育成で出てくる努力値を、最初に知っておきたい考え方に絞ってやさしく整理します。</summary>
+  </entry>
+  <entry>
+    <title>ポケモンカードを始めるときの買い方：パック・デッキ・収納の考え方</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/pokemon-card-buying-starter/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/pokemon-card-buying-starter/</id>
+    <published>2026-06-07T00:00:00+09:00</published>
+    <updated>2026-06-07T00:00:00+09:00</updated>
+    <summary>ポケモンカードを始めたい人に向けて、パック、構築済みデッキ、収納用品の選び方を整理します。</summary>
+  </entry>
+  <entry>
+    <title>タイプ相性の覚え方：最初から全部暗記しない</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/type-matchups/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/type-matchups/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>相性表を丸暗記せず、よく見るポケモンから弱点を覚えて自然に理解を広げる方法を紹介します。</summary>
+  </entry>
+  <entry>
+    <title>セーブとホールドの違い：救援投手の役割を整理</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/save-hold-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/save-hold-guide/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>プロ野球の救援投手を見るときに出てくるセーブとホールドの違いを、役割の考え方から初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>特性で相性が変わる例：ふゆう・ちょすい・もらいびから覚える</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/ability-matchup-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/ability-matchup-guide/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>タイプ相性だけでは判断しにくい特性の例を、ふゆう・ちょすい・もらいびから初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>プロ野球 投手成績入門まとめ：防御率から救援指標まで</title>
+    <link href="https://playbook-journal.pages.dev/articles/features/pitching-stats-starter/"/>
+    <id>https://playbook-journal.pages.dev/articles/features/pitching-stats-starter/</id>
+    <published>2026-06-04T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>プロ野球の投手成績を読むときに、最初に覚えたい数字を読む順番でまとめます。</summary>
+  </entry>
+  <entry>
+    <title>ポケモン 技選び入門まとめ：タイプ相性から特性まで</title>
+    <link href="https://playbook-journal.pages.dev/articles/features/pokemon-move-starter/"/>
+    <id>https://playbook-journal.pages.dev/articles/features/pokemon-move-starter/</id>
+    <published>2026-06-04T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>ポケモンの技選びで迷いやすいポイントを、初心者向けに読む順番でまとめます。</summary>
+  </entry>
+  <entry>
+    <title>読売ジャイアンツの歴史入門：本拠地・OB・今見るポイント</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/yomiuri-giants-history/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/yomiuri-giants-history/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>読売ジャイアンツを、長い歴史、本拠地の東京ドーム、印象的なOBや今見るポイントから初心者向けに紹介します。</summary>
+  </entry>
+  <entry>
+    <title>福岡ソフトバンクホークスの歴史入門：福岡・本拠地・強さの見方</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/softbank-hawks-history/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/softbank-hawks-history/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>福岡ソフトバンクホークスを、福岡の本拠地、ホークスの流れ、近年の強さの見方から初心者向けに紹介します。</summary>
+  </entry>
+  <entry>
+    <title>ポケットモンスター 赤・緑の歴史入門：すべての始まりを知る</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/pokemon-red-green-history/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/pokemon-red-green-history/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>1996年に発売された『ポケットモンスター 赤・緑』を、シリーズの原点として初心者向けに紹介します。</summary>
+  </entry>
+  <entry>
+    <title>ポケットモンスター 金・銀の歴史入門：ジョウトとカントーを旅する魅力</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/pokemon-gold-silver-history/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/pokemon-gold-silver-history/</id>
+    <published>2026-06-06T00:00:00+09:00</published>
+    <updated>2026-06-06T00:00:00+09:00</updated>
+    <summary>1999年に発売された『ポケットモンスター 金・銀』を、ジョウト地方、カントー地方、後のリメイク作品へのつながりから紹介します。</summary>
+  </entry>
+  <entry>
+    <title>QSとは？ 先発投手が試合を作る意味を知る</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/quality-start-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/quality-start-guide/</id>
+    <published>2026-06-05T00:00:00+09:00</published>
+    <updated>2026-06-05T00:00:00+09:00</updated>
+    <summary>プロ野球の先発投手を見るときに役立つQSの意味と、数字を見るときの注意点を初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>補助技とは？ 攻撃技だけではない技選びの考え方</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/support-move-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/support-move-guide/</id>
+    <published>2026-06-05T00:00:00+09:00</published>
+    <updated>2026-06-05T00:00:00+09:00</updated>
+    <summary>ポケモンの補助技がどんな役割を持つのか、攻撃技との違いから初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>管理者プロフィール：好きなポケモンとプロ野球の話</title>
+    <link href="https://playbook-journal.pages.dev/articles/features/admin-profile/"/>
+    <id>https://playbook-journal.pages.dev/articles/features/admin-profile/</id>
+    <published>2026-06-05T00:00:00+09:00</published>
+    <updated>2026-06-05T00:00:00+09:00</updated>
+    <summary>PLAYBOOK JOURNALを運営している管理者の好きなポケモン、好きなゲーム、好きな球団や選手について紹介します。</summary>
+  </entry>
+  <entry>
+    <title>奪三振率とは？ 投手の特徴を見るときに便利な数字</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/strikeout-rate-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/strikeout-rate-guide/</id>
+    <published>2026-06-04T00:00:00+09:00</published>
+    <updated>2026-06-04T00:00:00+09:00</updated>
+    <summary>奪三振率の意味と、投手の特徴を見るときにどう使えばよいかを初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>物理技と特殊技の違い：技選びで最初に見るポイント</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/physical-special-move-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/physical-special-move-guide/</id>
+    <published>2026-06-04T00:00:00+09:00</published>
+    <updated>2026-06-04T00:00:00+09:00</updated>
+    <summary>ポケモンの物理技と特殊技の違いを、攻撃・特攻との関係から初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>防御率とは？ 投手の成績を見るときに最初に覚えたい数字</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/era-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/era-guide/</id>
+    <published>2026-06-03T00:00:00+09:00</published>
+    <updated>2026-06-03T00:00:00+09:00</updated>
+    <summary>防御率の意味、計算の考え方、初心者が見るときの注意点を分かりやすく整理します。</summary>
+  </entry>
+  <entry>
+    <title>自責点と失点の違い：防御率を見る前に知っておきたいこと</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/earned-runs-vs-runs/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/earned-runs-vs-runs/</id>
+    <published>2026-06-03T00:00:00+09:00</published>
+    <updated>2026-06-03T00:00:00+09:00</updated>
+    <summary>投手成績で出てくる自責点と失点の違いを、防御率との関係から初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>タイプ一致とは？ 技を選ぶときに最初に覚えたい考え方</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/stab-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/stab-guide/</id>
+    <published>2026-06-03T00:00:00+09:00</published>
+    <updated>2026-06-03T00:00:00+09:00</updated>
+    <summary>ポケモンのタイプと技のタイプが一致する考え方を、初心者向けに分かりやすく整理します。</summary>
+  </entry>
+  <entry>
+    <title>関連サイト紹介：プロ野球とポケモンをより詳しく見る</title>
+    <link href="https://playbook-journal.pages.dev/articles/features/managed-sites/"/>
+    <id>https://playbook-journal.pages.dev/articles/features/managed-sites/</id>
+    <published>2026-06-03T00:00:00+09:00</published>
+    <updated>2026-06-03T00:00:00+09:00</updated>
+    <summary>PLAYBOOK JOURNALとあわせて使える、管理人運営のプロ野球サイトとポケモンサイトを紹介します。</summary>
+  </entry>
+  <entry>
+    <title>打率・出塁率・長打率の違い：OPSの前に覚えたい3つの数字</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/batting-average-obp-slg/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/batting-average-obp-slg/</id>
+    <published>2026-06-02T00:00:00+09:00</published>
+    <updated>2026-06-02T00:00:00+09:00</updated>
+    <summary>打率、出塁率、長打率がそれぞれ何を表すのか、初心者向けに違いと見方を整理します。</summary>
+  </entry>
+  <entry>
+    <title>4倍弱点から覚える複合タイプ入門：ポケモンごとに整理する</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/dual-type-fourfold-weakness/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/dual-type-fourfold-weakness/</id>
+    <published>2026-06-02T00:00:00+09:00</published>
+    <updated>2026-06-02T00:00:00+09:00</updated>
+    <summary>複合タイプの仕組みを、ガブリアスやギャラドスなどの4倍弱点から分かりやすく整理します。</summary>
+  </entry>
+  <entry>
+    <title>プロ野球を気軽に楽しむための入門記事</title>
+    <link href="https://playbook-journal.pages.dev/articles/features/baseball-starter/"/>
+    <id>https://playbook-journal.pages.dev/articles/features/baseball-starter/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-02T00:00:00+09:00</updated>
+    <summary>初めてプロ野球を見る人に向けて、観戦と数字の両方を楽しめる記事を読む順番でまとめます。</summary>
+  </entry>
+  <entry>
+    <title>ポケモンを気軽に楽しむための入門記事</title>
+    <link href="https://playbook-journal.pages.dev/articles/features/pokemon-starter/"/>
+    <id>https://playbook-journal.pages.dev/articles/features/pokemon-starter/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-02T00:00:00+09:00</updated>
+    <summary>ゲームやカードを始めたばかりの人に向けて、負担なく楽しむための記事をまとめます。</summary>
+  </entry>
+  <entry>
+    <title>OPSとは？ 打率だけでは見えない打者の強みを読む</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/ops-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/ops-guide/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>OPSの意味と基本的な読み方を、出塁率と長打率の違いから初心者向けに整理します。</summary>
+  </entry>
+  <entry>
+    <title>WHIPとは？ 投手の安定感をシンプルに確認する</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/whip-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/whip-guide/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>投手を見るときに役立つWHIPの意味と、数字だけで判断しないための注意点を紹介します。</summary>
+  </entry>
+  <entry>
+    <title>セ・パ交流戦の楽しみ方：初めて見る前に知りたいこと</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/interleague-guide/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/interleague-guide/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>普段は別リーグで戦う球団が対戦するセ・パ交流戦。初心者向けに楽しみ方を整理します。</summary>
+  </entry>
+  <entry>
+    <title>初めてのプロ野球観戦：球場へ行く前のチェックリスト</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/stadium-first-visit/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/stadium-first-visit/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>チケット確認から持ち物まで、初めて球場へ行くときに迷いやすい点をまとめます。</summary>
+  </entry>
+  <entry>
+    <title>新人選手を見るときの5つのポイント</title>
+    <link href="https://playbook-journal.pages.dev/articles/baseball/rookie-watch/"/>
+    <id>https://playbook-journal.pages.dev/articles/baseball/rookie-watch/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>数字だけで一喜一憂せず、新人選手の成長を楽しむための見方を紹介します。</summary>
+  </entry>
+  <entry>
+    <title>初心者向けポケモン用語集：迷いやすい言葉を整理</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/beginner-glossary/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/beginner-glossary/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>ゲームを始めたばかりの人が見かけやすい言葉を、最初に覚えたい範囲に絞って紹介します。</summary>
+  </entry>
+  <entry>
+    <title>ポケモンカードの保管方法：最初に揃えるもの</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/card-storage/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/card-storage/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>カードをきれいに保管するために、初心者が最初に用意したいものと整理の考え方を紹介します。</summary>
+  </entry>
+  <entry>
+    <title>ゲーム内ボックス整理術：続けられる分類を作る</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/box-organization/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/box-organization/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>ゲーム内のボックスがいっぱいになる前に、迷わず続けられるシンプルな整理方法を紹介します。</summary>
+  </entry>
+  <entry>
+    <title>対戦後の振り返り：1試合1メモで上達する</title>
+    <link href="https://playbook-journal.pages.dev/articles/pokemon/battle-review/"/>
+    <id>https://playbook-journal.pages.dev/articles/pokemon/battle-review/</id>
+    <published>2026-06-01T00:00:00+09:00</published>
+    <updated>2026-06-01T00:00:00+09:00</updated>
+    <summary>対戦の振り返りを負担にしないために、1試合につき一つだけ記録する方法を紹介します。</summary>
+  </entry>
+</feed>
